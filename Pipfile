@@ -7,6 +7,11 @@ name = "pypi"
 flask = "*"
 xgboost = "*"
 gunicorn = "*"
+pandas = "*"
+sklearn = "*"
+model-selection = "*"
+scikit-learn = "*"
+numpy = "*"
 
 [dev-packages]
 
