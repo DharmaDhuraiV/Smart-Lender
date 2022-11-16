@@ -1,9 +1,9 @@
 from flask import Flask, render_template,request
 import pickle
-import xgboost as xgb
+from xgboost import Booster
 def prediction(arrayofinputs):
     try:
-        booster = xgb.Booster()
+        booster = Booster()
         booster.load_model(r'test_model.bin')
         with open(r'xgboost_native_model_from_test_model.pkl-0.bin' , 'rb') as file:
             model = pickle.load(file)
